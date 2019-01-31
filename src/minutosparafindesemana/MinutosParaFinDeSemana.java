@@ -16,7 +16,6 @@ public class MinutosParaFinDeSemana {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int totalminutos;
         System.out.println("Introduce una hora con el siguiente formato (ej. 07:50)");
         String hora = sc.nextLine();
         System.out.println("Introduce un dia de la semana");
@@ -27,9 +26,9 @@ public class MinutosParaFinDeSemana {
         String m = arrayhora[1];
         int horas = Integer.parseInt(h);
         int minutos = Integer.parseInt(m);
-        totalminutos = (horas*60)+ minutos;
+        int totalminutos = (horas*60)+ minutos;
         
-     
+        
      switch(dia.toLowerCase())
         {
             case "lunes":
